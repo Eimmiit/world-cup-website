@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World cup - 26</title>
+    <!-- Alpine.js for lightweight interactive elements -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Google Fonts: Impactful Condensed Sans & Clean Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Space+Grotesk:wght@400;500;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/output.css">
+
+</head>
+
+<body class="bg-tnr-black text-white font-sans antialiased">
+
+
+    <video id="" autoplay muted loop playsinline class="inset-0 w-full h-full object-cover">
+        <source src="./videos/FWC26.mp4" type="video/mp4">
+    </video>
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-tnr-purple/30 backdrop-blur-md">
+
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <div class="flex items-center gap-3">
+
+                <img src="./images/logo.png" alt="World Cup 2026" class="h-16 md:h-20">
+
+                <div class="hidden lg:block">
+                    <p class="font-semiexpandedblack text-white text-sm uppercase leading-none">
+                        World Cup 2026
+                    </p>
+
+                    <p class="font-normalregular text-[10px] uppercase tracking-[0.25em] text-gray-400 mt-1">
+                        Fan Experience Platform
+                    </p>
+                </div>
+
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest">
+
+                <a href="#home" class="font-normalblack text-tnr-lightg hover:text-tnr-blue transition duration-300">
+                    Home
+                </a>
+
+                <a href="#teams" class="font-normalblack hover:text-tnr-blue transition duration-300">
+                    Teams
+                </a>
+
+                <a href="#matches" class="font-normalblack hover:text-tnr-blue transition duration-300">
+                    Matches
+                </a>
+
+                <a href="#cities" class="font-normalblack hover:text-tnr-blue transition duration-300">
+                    Host Cities
+                </a>
+
+                <a href="#fan-zone" class="font-normalblack hover:text-tnr-blue transition duration-300">
+                    Fan Zone
+                </a>
+
+            </nav>
+            <div>
+                <a href="#fan-zone"
+                    class="inline-flex items-center border border-white text-xs font-ultracondensedbold uppercase tracking-[0.2em] px-5 py-3 hover:bg-tnr-blue hover:text-black hover:border-tnr-blue transition duration-300">
+                    Start Journey
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="home" class="bg-gradient-to-b from-white via-white to-tnr-lightGrey min-h-[85vh] flex items-center">
+
+        <div class="max-w-8xl mx-auto px-6 py-12 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Side Image -->
+                <div class="lg:col-span-5 space-y-6">
+
+                    <div class="aspect-video bg-neutral-900 overflow-hidden relative border border-black/10">
+
+                        <img src="./images/hero-image.webp" alt="World Cup stadium atmosphere"
+                            class="w-full h-full object-cover">
+
+                        <div
+                            class="absolute bottom-4 left-4 bg-white/90 text-tnr-blue px-3 py-1 font-normalblack text-[10px] tracking-[0.2em] uppercase">
+                            The Biggest World Cup Ever
+                        </div>
+
+                    </div>
+
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-md font-normalregular">
+                        48 nations. 104 matches. One global stage.
+                        Experience football's greatest celebration through stories,
+                        predictions, host cities, and unforgettable moments.
+                    </p>
+
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="lg:col-span-7 flex flex-col justify-center">
+
+                    <span class="font-normalblack text-xs uppercase tracking-[0.3em] text-tnr-blue mb-4">
+                        FIFA World Cup 2026
+                    </span>
+
+                    <h1
+                        class="font-ultracondensedblack text-6xl md:text-8xl lg:text-[9rem] uppercase leading-[0.9] text-tnr-blue">
+                        One World.
+                        <br>
+                        One Trophy.
+                    </h1>
+
+                    <p class="mt-6 text-base md:text-lg text-gray-600 max-w-xl font-normalregular leading-relaxed">
+                        The journey across North America begins.
+                        Follow the nations, explore the host cities,
+                        and experience the tournament beyond the scoreline.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="mt-10 flex flex-wrap gap-4">
+
+                        <a href="#fan-zone"
+                            class="bg-tnr-blue text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-normalblack hover:opacity-90 transition">
+                            Start Journey
+                        </a>
+
+                        <a href="#teams"
+                            class="border border-tnr-blue text-tnr-blue px-8 py-4 text-xs uppercase tracking-[0.2em] font-normalblack hover:bg-tnr-blue hover:text-white transition">
+                            Explore Teams
+                        </a>
+
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="mt-12 pt-8 border-t border-black/10 flex flex-col sm:flex-row gap-8 sm:gap-12">
+
+                        <div>
+                            <span class="block text-tnr-blue font-normalblack text-xs uppercase tracking-widest mb-2">
+                                01 / 48 Nations
+                            </span>
+
+                            <p class="text-sm text-gray-500 font-normalregular">
+                                Competing for football's biggest prize.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span class="block text-tnr-blue font-normalblack text-xs uppercase tracking-widest mb-2">
+                                02 / 104 Matches
+                            </span>
+
+                            <p class="text-sm text-gray-500 font-normalregular">
+                                Across North America.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span class="block text-tnr-blue font-normalblack text-xs uppercase tracking-widest mb-2">
+                                03 / 16 Host Cities
+                            </span>
+
+                            <p class="text-sm text-gray-500 font-normalregular">
+                                One unforgettable tournament.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3. Narrative Asymmetric Block -->
+    <section class="border-y border-white/10 bg-tnr-grey/50 py-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- Left Content -->
+            <div class="lg:col-span-4">
+
+                <span class="font-normalblack text-xs uppercase tracking-[0.3em] text-tnr-blue block mb-4">
+                    The Biggest Tournament Ever
+                </span>
+
+                <h2 class="font-semiexpandedblack text-2xl md:text-4xl lg:text-4xl uppercase leading-tight text-white">
+                    Football brings
+                    the world together.
+                </h2>
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8 text-gray-400">
+
+                <div>
+                    <p class="font-normalregular text-base leading-relaxed">
+                        Across North America, forty-eight nations will compete
+                        for football's greatest prize. From unforgettable goals
+                        to historic upsets, every match adds a new chapter to
+                        the world's biggest sporting event.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="font-normalregular text-base leading-relaxed">
+                        Explore the teams, discover the host cities, follow
+                        the journey to the final, and experience the stories,
+                        rivalries, and moments that will define the 2026 World Cup.
+                    </p>
+                </div>
+
+                <!-- Stats -->
+                <div class="sm:col-span-2 mt-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                        <div>
+                            <h3 class="font-ultracondensedblack text-5xl text-white">
+                                48
+                            </h3>
+
+                            <p class="font-normalregular text-xs uppercase tracking-wider text-gray-500">
+                                Nations
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-ultracondensedblack text-5xl text-white">
+                                104
+                            </h3>
+
+                            <p class="font-normalregular text-xs uppercase tracking-wider text-gray-500">
+                                Matches
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-ultracondensedblack text-5xl text-white">
+                                16
+                            </h3>
+
+                            <p class="font-normalregular text-xs uppercase tracking-wider text-gray-500">
+                                Host Cities
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-ultracondensedblack text-5xl text-white">
+                                1
+                            </h3>
+
+                            <p class="font-normalregular text-xs uppercase tracking-wider text-gray-500">
+                                Trophy
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 overflow-hidden bg-tnr-purple/40 select-none">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="space-y-2">
+
+                <div class="font-semiexpandedblack text-7xl md:text-9xl uppercase leading-none text-white">
+                    HOST
+                </div>
+
+                <div class="font-ultracondensedblack text-7xl md:text-9xl uppercase leading-none text-stroke">
+                    CITIES
+                </div>
+
+                <p class="font-normalregular text-gray-400 max-w-2xl mt-6">
+                    Sixteen cities across Canada, Mexico, and the United States
+                    will welcome the world's biggest football tournament.
+                    Discover the destinations that will shape the 2026 World Cup.
+                </p>
+
+            </div>
+            <div class="relative overflow-y-hidden pt-12 pb-8">
+
+                <div class="flex gap-6 w-max marquee-track">
+
+                    <div class="w-96 h-56 shrink-0 border border-white/10 relative">
+                        <img src="./images/new-york" alt="New York" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                New York
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="w-96 h-72 shrink-0 translate-y-8 border border-white/10 relative">
+                        <img src="./images/los-angeles" alt="Los Angeles" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Los Angeles
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Toronto -->
+                    <div class="w-96 h-60 shrink-0 border border-white/10 relative">
+                        <img src="./images/toronto" alt="Toronto" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Toronto
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="w-96 h-72 shrink-0 translate-y-8 border border-white/10 relative">
+                        <img src="./images/mexico-city" alt="Mexico City" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Mexico City
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="w-96 h-56 shrink-0 border border-white/10 relative">
+                        <img src="./images/dallas" alt="Dallas" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Dallas
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="w-96 h-72 shrink-0 translate-y-8 border border-white/10 relative">
+                        <img src="./images/atlanta" alt="Atlanta" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Atlanta
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="w-96 h-60 shrink-0 border border-white/10 relative">
+                        <img src="./images/vancouver" alt="Vancouver" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Vancouver
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="w-96 h-72 shrink-0 translate-y-8 border border-white/10 relative">
+                        <img src="./images/miami" alt="Miami" class="w-full h-full object-cover">
+
+                        <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                            <h3 class="font-normalblack text-white uppercase">
+                                Miami
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+
+        <!-- Section Intro -->
+        <div class="mb-16 max-w-3xl">
+
+            <span class="font-normalblack text-xs uppercase tracking-[0.3em] text-tnr-blue">
+                Fan Experiences
+            </span>
+
+            <h2 class="font-semiexpandedblack text-4xl md:text-6xl uppercase text-white mt-4 leading-none">
+                Experience The Tournament
+                <br>
+                Beyond The Scoreline.
+            </h2>
+
+            <p class="font-normalregular text-gray-400 mt-6 text-base leading-relaxed">
+                The World Cup is more than ninety minutes. Explore personalized
+                experiences designed to make every match, prediction, and celebration
+                part of your own football story.
+            </p>
+
+        </div>
+
+        <!-- Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+            <div class="space-y-5">
+                <div class="font-ultracondensedbold text-tnr-blue text-2xl uppercase">
+                    01 / Fan DNA
+                </div>
+
+                <p class="font-normalregular text-sm text-gray-400 leading-relaxed">
+                    Discover your football identity through interactive challenges
+                    and find the nation, tactics, and style of play that best
+                    represent your passion for the game.
+                </p>
+            </div>
+
+            <div class="space-y-5">
+                <div class="font-ultracondensedbold text-tnr-blue text-2xl uppercase">
+                    02 / World Cup Passport
+                </div>
+
+                <p class="font-normalregular text-sm text-gray-400 leading-relaxed">
+                    Collect digital stamps from nations, cities, stadiums,
+                    and tournament milestones as you follow the journey
+                    from kickoff to the final whistle.
+                </p>
+            </div>
+
+            <div class="space-y-5">
+                <div class="font-ultracondensedbold text-tnr-blue text-2xl uppercase">
+                    03 / Tournament Wrapped
+                </div>
+
+                <p class="font-normalregular text-sm text-gray-400 leading-relaxed">
+                    Revisit your predictions, favorite matches, nations supported,
+                    and unforgettable moments through a personalized tournament recap.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="bg-tnr-purple/70 py-24 border-y border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Text -->
+            <div>
+
+                <span class="font-normalblack text-xs uppercase tracking-[0.3em] text-tnr-blue">
+                    The Journey
+                </span>
+
+                <h2 class="font-semiexpandedblack text-3xl md:text-6xl uppercase text-white leading-none mt-4">
+                    Every Match.
+                    <br>
+                    <span class="text-transparent text-stroke">
+                        Tells A Story.
+                    </span>
+                </h2>
+
+                <p class="font-normalregular text-tnr-white/70 mt-6 leading-relaxed max-w-lg">
+                    From dramatic comebacks and last-minute winners to historic
+                    upsets and legendary performances, every match contributes
+                    to the story of the world's greatest football tournament.
+                </p>
+
+            </div>
+
+            <!-- Image -->
+            <div class="aspect-video overflow-hidden border border-white/10 relative">
+
+                <video autoplay muted loop playsinline class="w-full h-full object-cover">
+
+                    <source src="./videos/worldCupvideoSnip.mp4" type="video/mp4">
+
+                </video>
+
+                <!-- Optional Overlay -->
+                <div class="absolute inset-0 bg-black/30"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bg-tnr-lightGrey text-tnr-black py-24">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <div class="bg-tnr-black text-white p-8 md:p-12 border-l-8 border-tnr-blue">
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+
+                <div>
+
+                    <span class="font-normalblack text-xs uppercase tracking-[0.3em] text-tnr-blue">
+                        The Journey Starts Here
+                    </span>
+
+                    <h4 class="font-semiexpandedblack text-3xl md:text-5xl uppercase mt-3">
+                        Become Part Of
+                        <br>
+                        The Story.
+                    </h4>
+
+                    <p class="text-sm md:text-base text-gray-400 mt-4 font-normalregular max-w-md">
+                        Follow nations, explore host cities, make predictions,
+                        collect achievements, and experience the biggest World Cup
+                        ever through your own unique journey.
+                    </p>
+
+                </div>
+
+                <div class="md:text-right">
+
+                    <a href="#"
+                        class="inline-block bg-tnr-blue text-white text-xs uppercase tracking-[0.2em] px-8 py-4 hover:bg-white hover:text-black transition duration-300">
+                        Start Your Journey →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- 8. Infinite Ribbon Marquee Accent Footer -->
+    <div
+    class="bg-tnr-blue py-4 overflow-hidden border-y border-white/10 select-none whitespace-nowrap flex font-ultracondensedblack text-2xl uppercase tracking-wider text-white">
+
+    <div class="animate-marquee flex gap-8 shrink-0 min-w-full">
+        <span>• 48 NATIONS</span>
+        <span>• 104 MATCHES</span>
+        <span>• 16 HOST CITIES</span>
+        <span>• ONE TROPHY</span>
+        <span>• ONE WORLD</span>
+        <span>• MAKE HISTORY</span>
+    </div>
+
+    <div class="animate-marquee flex gap-8 shrink-0 min-w-full">
+        <span>• 48 NATIONS</span>
+        <span>• 104 MATCHES</span>
+        <span>• 16 HOST CITIES</span>
+        <span>• ONE TROPHY</span>
+        <span>• ONE WORLD</span>
+        <span>• MAKE HISTORY</span>
+    </div>
+
+</div>
+
+
+
+    <footer class="relative bg-tnr-black text-gray-500 py-20 border-t border-white/5">
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
+
+        <!-- Brand -->
+        <div class="space-y-5">
+
+            <h3 class="font-expandedblack text-white text-3xl uppercase">
+                World Cup 2026
+            </h3>
+
+            <p class="font-normalregular text-sm leading-relaxed">
+                Follow the journey across North America. Explore nations,
+                host cities, fan experiences, and unforgettable moments from
+                the biggest FIFA World Cup ever.
+            </p>
+
+        </div>
+
+        <!-- Tournament -->
+        <div>
+
+            <h4 class="font-ultracondensedbold text-white uppercase tracking-[0.2em] mb-4">
+                Tournament
+            </h4>
+
+            <ul class="space-y-3 font-normalregular text-sm">
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Teams
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Matches
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Host Cities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Stadiums
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Fan Zone -->
+        <div>
+
+            <h4 class="font-ultracondensedbold text-white uppercase tracking-[0.2em] mb-4">
+                Fan Zone
+            </h4>
+
+            <ul class="space-y-3 font-normalregular text-sm">
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Fan DNA
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        World Cup Passport
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Tournament Wrapped
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Predictions
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Connect -->
+        <div>
+
+            <h4 class="font-ultracondensedbold text-white uppercase tracking-[0.2em] mb-4">
+                Connect
+            </h4>
+
+            <ul class="space-y-3 font-normalregular text-sm">
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        X (Twitter)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        YouTube
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-white transition">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div
+        class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <p class="font-normalregular text-xs text-gray-600">
+            © 2026 World Cup Experience. Built for fans around the world.
+        </p>
+
+        <p class="font-ultracondensedbold text-xs uppercase tracking-[0.3em] text-gray-600">
+            48 Nations • 104 Matches • 16 Host Cities • 1 Trophy
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>\- 
