@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "fwc2026condensedlight";
+  src: url("../fonts/FWC2026-CondensedLight.c11e508e.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026expandedblack";
+  src: url("../fonts/FWC2026-ExpandedBlack.e49451e9.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026normalblack";
+  src: url("../fonts/FWC2026-NormalBlack.2bd896c8.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026normalregular";
+  src: url("../fonts/FWC2026-NormalRegular.77c3c249.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026semiexpandedblack";
+  src: url("../fonts/FWC2026-SemiExpandedBlack.e378fa1c.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026ultracondensedblack";
+  src: url("../fonts/FWC2026-UltraCondensedBlack.8e6ba053.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026ultracondensedbold";
+  src: url("../fonts/FWC2026-UltraCondensedBold.0e7149b5.ttf");
+}
+
+@font-face {
+  font-family: "fwc2026ultracondensedmedium";
+  src: url("../fonts/FWC2026-UltraCondensedMedium.4da29b9d.ttf");
+}
+
+
+
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+.text-stroke-dark {
+  -webkit-text-stroke: 1.5px #0D0D0D;
+  color: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
